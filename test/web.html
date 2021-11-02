@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fitstweb</title>
+    <script>
+        var str="";
+        for(var i=1;i<=9;i++)
+        {
+            for(var j=1;j<=i;j++)
+            {
+                str+=j+"*"+i+"="+j*i+"\t";
+            }
+            str+="\n";
+        }
+        function show(){
+            var myweb=document.getElementById("myweb");
+            myweb.innerText=str;
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="显示" onclick="show()"><br>
+<div id="myweb"></div>>
+</body>
+</html>
